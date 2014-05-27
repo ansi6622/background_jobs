@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'rails_12factor', '~> 0.0.2', group: :production
 
+gem 'sidekiq', '~> 3.1.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.2'
