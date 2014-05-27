@@ -12,6 +12,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'rails_12factor', '~> 0.0.2', group: :production
 
 
+gem 'resque', '~> 1.25.2'
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.2'
   gem 'capybara', '~> 2.2.1'
