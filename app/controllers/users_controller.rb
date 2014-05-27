@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_attributes)
     if @user.save
-      RegistrationEmailWorker.perform_async(@user)
+      RegistrationEmailWorker.perform_async(@user.id)
       redirect_to new_user_path, notice: "Welcome #{@user.email}!"
     else
       render 'new'
